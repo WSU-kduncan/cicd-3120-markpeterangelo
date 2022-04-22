@@ -3,7 +3,11 @@ name: docker-build-push
 on: [push]
 
 env:
+<<<<<<< HEAD
   DOCKER_REPO: markpeterangeloproject5
+=======
+  DOCKER_REPO: markpeterangeloproject5
+>>>>>>> b4f1e501edb92bf775783eb02395883e337baff1
 
 jobs:
   docker-build-push:
@@ -16,7 +20,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
       - name: docker buildx
         uses: docker/setup-buildx-action@v1
       - name: build and push
