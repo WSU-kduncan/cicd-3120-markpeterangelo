@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-      # Login in to DockerHub, credentials stored as GitHub repository secrets
+      # Login in to DockerHub, credentials stored as GitHub repository secrets 
       #    Usage documentation: https://github.com/marketplace/actions/docker-login
       - 
         name: Login to DockerHub
